@@ -12,7 +12,7 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from .web import bp as main_blueprint
-    app.register_blueprint(main_blueprint)
+    from .web import bp as web_bp
+    app.register_blueprint(web_bp)
 
     return app
