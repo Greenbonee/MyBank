@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ username }}</h2>
+        <a href="{{ url_for('web.logout') }}" class="btn btn-primary">Logout</a>
+    </div>
+</body>
+</html>

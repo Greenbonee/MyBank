@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Success</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            <strong>Registration successful!</strong> You can now login.
+        </div>
+        <a href="{{ url_for('web.register') }}" class="btn btn-primary">Back to Registration</a>
+    </div>
+</body>
+</html>
